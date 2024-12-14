@@ -1,0 +1,70 @@
+.box {
+    height: 0;
+}
+
+.head {
+    display: flex;
+    width: calc(100vw - 270px);
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.new-std {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 10px;
+}
+
+.data {
+    display: grid;
+    padding-left: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding: 12px;
+    font-size: 16px;
+}
+
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.data button{
+    margin-left: 10px;
+}
+

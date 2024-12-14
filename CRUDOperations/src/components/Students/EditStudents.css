@@ -1,0 +1,24 @@
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+.form-details{
+    display: flex;
+    flex-direction: column;
+
+}
+label{
+    margin-bottom: 20px;
+}

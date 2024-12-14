@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "2568",
+      "user": "sj",
+      "name": "Sujal",
+      "password": "1",
+      "email": "sj@gmail.com",
+      "phone": "99"
+    },
+    {
+      "id": "7ad7",
+      "user": "sujal",
+      "name": "Sujal Jindal",
+      "password": "1",
+      "email": "sujal@gmail.com",
+      "phone": "09"
+    },
+    {
+      "id": "cd7b",
+      "user": "Sujal",
+      "name": "Sujal Jindal",
+      "password": "08",
+      "email": "sujal@gmail.com",
+      "phone": "34"
+    },
+    {
+      "id": "167f",
+      "user": "Sujal",
+      "name": "Sujal Jindal",
+      "password": "sj",
+      "email": "sujaljindal@gmail.com",
+      "phone": "987"
+    },
+    {
+      "id": "4795",
+      "user": "Rish",
+      "name": "Rishabh",
+      "password": "23",
+      "email": "rishabh@gmail.com",
+      "phone": "34"
+    },
+    {
+      "id": "e8d0",
+      "user": "Rishabh",
+      "name": "Rishabh",
+      "password": "12",
+      "email": "r@gmail.com",
+      "phone": "09"
+    }
+  ]
+}
