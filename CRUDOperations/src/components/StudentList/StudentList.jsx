@@ -10,10 +10,11 @@ const StudentList = () => {
   const filteredStudents = students.filter(
     (student) => student.coursename === state.courseName
   );
+  
 
   return (
     <div className="main-page">
-      <h1>Students Enrolled in the Course</h1>
+      <h1 className='head'>Students Enrolled in the Course</h1>
       <button onClick={() => navigate(-1)}>Go Back</button>
       {filteredStudents.length > 0 ? (
         <table>

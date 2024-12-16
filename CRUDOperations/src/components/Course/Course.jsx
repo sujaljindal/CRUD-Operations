@@ -5,7 +5,11 @@ import './Course.css';
 
 const Course = () => {
   const navigate = useNavigate();
-  const { courses, setCourses } = useStudentContext();
+  const { courses, setCourses, students } = useStudentContext();
+
+  const getStudentCount = (courseName) => {
+    return students.filter((student) => student.coursename === courseName).length;
+  };
 
   const handleDelete = (index) => {
     const updatedCourses = [...courses];
@@ -42,6 +46,8 @@ const Course = () => {
             <tr>
               <th>Name</th>
               <th>Course ID</th>
+              <th>Price</th>
+              <th>No. of Students</th>
               <th>Edit/Delete</th>
               <th>View Student List</th>
             </tr>
@@ -51,6 +57,8 @@ const Course = () => {
               <tr key={index}>
                 <td>{course.name}</td>
                 <td>{course.courseId}</td>
+                <td>{course.price}</td>
+                <td>{getStudentCount(course.name)}</td> 
                 <td>
                   <button onClick={() => handleEdit(index)}>Edit</button>
                   <button onClick={() => handleDelete(index)}>Delete</button>

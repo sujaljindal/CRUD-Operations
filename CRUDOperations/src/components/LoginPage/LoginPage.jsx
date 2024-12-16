@@ -57,7 +57,7 @@ const LoginPage = () => {
           <p className="para">Enter your credentials to access your account</p>
           <div className="form-sign" action="">
             <div className="username">
-              <label htmlFor="username">Username</label>
+              <label htmlFor="username">Username:</label>
               <input
                 value={username}
                 onChange={(e) => setUserName(e.target.value)}
@@ -66,8 +66,8 @@ const LoginPage = () => {
                 placeholder="Enter Your Username"
               />
             </div>
-            <div className="pswd-box">
-              <label htmlFor="pswd">Password</label>
+            <div className="pswd-boxs">
+              <label htmlFor="pswd">Password:</label>
               <input
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}

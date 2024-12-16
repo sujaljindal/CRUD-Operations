@@ -11,60 +11,58 @@
     max-width: 600px;
     height: auto;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px 20px;
     background-color: #FFFFFF;
     border-radius: 10px;
     
 }
 .heading{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .sign{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .para{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .form-sign{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    /* flex-direction: column; */
+    gap: 10px;
 
 }
 
 .user-name{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 10px;
     
 }
 .email-box{
     display: flex;
-    flex-direction: column;
     gap: 10px;
 }
-.full-name{
+#fullname{
     display: flex;
-    flex-direction: column;
     gap: 10px;
 }
 .phone{
     display: flex;
-    flex-direction: column;
     gap: 10px;
 }
 .pswd-box{
     display: flex;
-    flex-direction: column;
     gap: 10px;
 }
 button{
     background-color: #FEAF00;
-    /* border: none; */
+    padding: 10px;
+    border-radius: 5px;
     border: 1px solid black;
+    margin-bottom: 20px;
 }
 

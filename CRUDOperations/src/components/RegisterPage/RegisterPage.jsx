@@ -38,7 +38,7 @@ const RegisterPage = () => {
                     <label htmlFor="email">Email</label>
                     <input value={email} onChange={e=>setEmail(e.target.value)} className="email" type="email" placeholder='Enter Your Email' />
                 </div>
-                <div className='full-name'>
+                <div className='fullname' id='fullname'>
                     <label htmlFor="name">Name</label>
                     <input value={name} onChange={e=>setName(e.target.value)} className="name" type="text" placeholder='Enter Your Name' />
                 </div>

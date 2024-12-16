@@ -9,6 +9,7 @@ const AddCourse = () => {
   const [newCourse, setNewCourse] = useState({
     name: '',
     courseId: '',
+    price:'',
   });
 
   const handleChange = (e) => {
@@ -40,6 +41,11 @@ const AddCourse = () => {
           value={newCourse.courseId}
           onChange={handleChange}
         />
+        <input type="text"
+        name='price'
+        placeholder='Price'
+        value={newCourse.price}
+        onChange={handleChange} />
         <button type="submit">Add Course</button>
       </form>
     </div>

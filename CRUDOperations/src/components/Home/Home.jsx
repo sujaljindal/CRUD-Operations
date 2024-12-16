@@ -5,7 +5,7 @@ import { useNavigate, NavLink, Outlet } from 'react-router-dom';
 
 const Home = () => {
   const navigate = useNavigate();
-  const [name, setName] = useState('Loading...');
+  const [name, setName] = useState('Guest');
   const [username, setUsername] = useState('');
   
   const isAuthenticated = localStorage.getItem('isAuthenticated');
@@ -14,7 +14,7 @@ const Home = () => {
     if (!isAuthenticated) {
       navigate('/login');
     } else {
-      const storedUsername = localStorage.getItem('username');
+      const storedUsername = fetch(`http://localhost:8000/users?user=${username}`)
       setUsername(storedUsername);
     }
   }, [isAuthenticated, navigate]);
@@ -24,7 +24,7 @@ const Home = () => {
       fetch(`http://localhost:8000/users?user=${username}`)
         .then(response => response.json())
         .then(data => {
-          setName(data.name || 'No name available');
+          setName(data?.name || 'No name available');
         })
         .catch(err => {
           console.error('Error fetching user data:', err);
@@ -32,7 +32,6 @@ const Home = () => {
         });
     }
   }, [username]);
-
 
   const handleLogout = () => {
     if (window.confirm('Are you sure you want to log out?')) {
@@ -47,7 +46,7 @@ const Home = () => {
       <div className="sidebar">
         <h1 className="titles">CRUD OPERATIONS</h1>
         <img className="user-img" src={user} alt="User Profile" />
-        <h2 className="name">{username || 'Guest'}</h2>
+        <h1 className="name">{name}</h1> 
         <h2 className="post">Admin</h2>
         <ul className="menu">
           <li><NavLink to="/" activeclassname="active">Home</NavLink></li>

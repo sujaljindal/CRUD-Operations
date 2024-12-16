@@ -38,13 +38,13 @@
 
 .username{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 10px;
 }
 
-.pswd-box{
+.pswd-boxs{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 10px;
 }
 button{

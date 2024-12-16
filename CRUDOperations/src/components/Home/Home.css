@@ -26,11 +26,11 @@
   margin-bottom: 20px;
 }
 
-.name {
+/* .name {
   font-size: large;
   font-weight: 700;
   margin-bottom: 10px;
-}
+} */
 
 .post {
   font-size: large;
@@ -53,6 +53,9 @@ li {
 
 li:hover {
   background-color: #feaf00;
+  border-radius: 5px;
+  padding-left: 15px;
+  
 }
 
 .logout {

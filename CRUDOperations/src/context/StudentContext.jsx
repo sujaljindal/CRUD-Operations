@@ -26,6 +26,7 @@ export const StudentProvider = ({ children }) => {
     setStudents(updatedStudents);
     localStorage.setItem('students', JSON.stringify(updatedStudents));
   };
+  
 
   return (
     <StudentContext.Provider

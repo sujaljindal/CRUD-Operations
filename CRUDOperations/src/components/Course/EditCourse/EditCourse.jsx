@@ -16,11 +16,12 @@ const EditCourse = () => {
 
   const [courseName, setCourseName] = useState(course?.name || '');
   const [courseId, setCourseId] = useState(course?.courseId || '');
+  const [coursePrice,setCoursePrice] = useState(course?.price || '');
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const updatedCourse = { name: courseName, courseId };
+    const updatedCourse = { name: courseName, courseId , coursePrice};
     const updatedCourses = [...courses];
     updatedCourses[index] = updatedCourse;
 
@@ -47,6 +48,15 @@ const EditCourse = () => {
           <input
             type="text"
             value={courseId}
+            onChange={(e) => setCourseId(e.target.value)}
+            required
+          />
+        </label>
+        <label>
+          Price:
+          <input
+            type="text"
+            value={coursePrice}
             onChange={(e) => setCourseId(e.target.value)}
             required
           />
