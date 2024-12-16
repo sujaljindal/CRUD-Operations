@@ -14,6 +14,8 @@ import Report from './components/Report/Report';
 import Settings from './components/Settings/Settings';
 import Dashboard from './components/Dashboard/Dashboard';
 import AddCourse from './components/Course/AddCourse/AddCourse';
+import EditCourse from './components/Course/EditCourse/EditCourse';
+import StudentList from './components/StudentList/StudentList';
 
 import { StudentProvider } from './context/StudentContext';
 
@@ -28,9 +30,12 @@ function App() {
 
           <Route path="/" element={<Home />}>
             <Route index element={<Dashboard />} />
+            <Route path="/students/list" element={<StudentList />} />
+
 
             <Route path="course" element={<Course />} />
             <Route path="course/addcourse" element={<AddCourse/>}/>
+            <Route path="course/edit" element={<EditCourse/>}></Route>
             <Route path="students" element={<Students />} />
             <Route path="students/add" element={<DataAdd />} />
             <Route path="students/edit" element={<EditStudent />} />

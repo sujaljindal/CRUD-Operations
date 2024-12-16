@@ -1,10 +1,14 @@
-import React,{useEffect} from 'react';
+import React,{useEffect, useState} from 'react';
 import './Home.css';
 import user from '../../assets/user.png';
 import { useNavigate, NavLink, Outlet } from 'react-router-dom';
 
 const Home = () => {
   const navigate = useNavigate();
+  // const [name,setName] =useState("");
+  // useEffect(()=>{
+  //   const savedUsers=localStorage.getItem('')
+  // })
   const isAuthenticated = localStorage.getItem('isAuthenticated')
   useEffect(()=>{
     if(!isAuthenticated)
