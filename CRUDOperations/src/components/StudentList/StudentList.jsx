@@ -5,10 +5,10 @@ import { useStudentContext } from '../../context/StudentContext';
 const StudentList = () => {
   const { state } = useLocation();
   const navigate = useNavigate();
-  const { students } = useStudentContext();
+  const { students} = useStudentContext();
 
   const filteredStudents = students.filter(
-    (student) => student.courseId === state.courseId
+    (student) => student.coursename === state.courseName
   );
 
   return (
